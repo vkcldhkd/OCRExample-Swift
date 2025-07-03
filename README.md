@@ -12,6 +12,12 @@
 
 ---
 
+## 📸 화면 예시
+
+![result1](./Screenshots/1.png)
+![result2](./Screenshots/2.png)
+
+---
 
 ## 🛠 사용 기술
 
