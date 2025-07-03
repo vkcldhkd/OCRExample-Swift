@@ -34,6 +34,10 @@ extension ViewController {
             self.resultLabel.text = text
         }
     }
+    
+    func getResultLabelText() -> String? {
+        return self.resultLabel.text
+    }
 }
 
 // MARK: - Setup
@@ -45,6 +49,10 @@ private extension ViewController {
         self.imageView.contentMode = .scaleAspectFit
         self.resultLabel.numberOfLines = 0
         self.resultLabel.textAlignment = .center
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.didTapResultLabel))
+        self.resultLabel.isUserInteractionEnabled = true
+        self.resultLabel.addGestureRecognizer(tapGesture)
+        
 
         self.pickButton.setTitle("사진 선택", for: .normal)
         self.pickButton.addTarget(self, action: #selector(self.selectImage), for: .touchUpInside)

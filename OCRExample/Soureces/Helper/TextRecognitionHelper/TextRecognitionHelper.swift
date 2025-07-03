@@ -29,7 +29,8 @@ struct TextRecognitionHelper {
         }
 
         request.recognitionLevel = .accurate
-        request.recognitionLanguages = ["ko-KR", "en-US"]
+//        request.recognitionLanguages = ["ko-KR", "en-US"]
+        request.recognitionLanguages = [TTSSupportedLanguage.korean.rawValue]
 
         let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
         DispatchQueue.global(qos: .userInitiated).async {
