@@ -1,6 +1,5 @@
 # OCRExample-Swift
-> 이미지 속 글자를 추출하고, 탭하면 음성으로 읽어주는 iOS 예제 프로젝트입니다.  
-> `Vision`, `AVFoundation` 프레임워크를 활용한 OCR + TTS 통합 데모입니다.
+> `Vision`, `AVFoundation` 프레임워크를 활용한 OCR(이미지 속 글자를 추출) + TTS(음성으로 읽어주는) iOS 예제 프로젝트입니다.
 
 ## ✨ 기능 소개
 
